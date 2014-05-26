@@ -1,4 +1,4 @@
-LOAD DATA LOCAL INFILE 'EN_US_D_productattributes.csv' INTO TABLE tempproductattribute 
+LOAD DATA LOCAL INFILE 'conquire_richcontent_full_current.csv' INTO TABLE tempproductimages 
 CHARACTER SET latin1
 FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'

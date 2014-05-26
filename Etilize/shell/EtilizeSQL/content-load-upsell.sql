@@ -1,7 +1,3 @@
-
-  select "----------Loading Upsell----------" as '';
-LOAD DATA LOCAL INFILE 'NorthAmerica_U_productupsell.csv' INTO TABLE tempproductupsell FIELDS TERMINATED BY ','
+LOAD DATA LOCAL INFILE 'EN_US_U_productupsell.csv' INTO TABLE tempproductupsell FIELDS TERMINATED BY ','
 OPTIONALLY ENCLOSED BY '"'
 LINES TERMINATED BY '\r\n';
-
-

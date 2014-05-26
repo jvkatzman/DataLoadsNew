@@ -1,5 +1,4 @@
 
-  
 # -----------------------------------------------------------------------
 # product
 # -----------------------------------------------------------------------
@@ -31,7 +30,7 @@ CREATE TABLE tempproductaccessories
 					            isactive BOOL default 1 NOT NULL,
 					            ispreferred BOOL default 0 NOT NULL,
 					            isoption BOOL default 0 NOT NULL,
-	    				            note MEDIUMTEXT default '' NOT NULL
+	    				            note MEDIUMTEXT 
 ) Engine=MyISAM;
 
 # -----------------------------------------------------------------------
@@ -44,7 +43,7 @@ CREATE TABLE tempproductattribute
 				            productid INTEGER default 0 NOT NULL,
 				            attributeid BIGINT default 0 NOT NULL,
 				            categoryid INTEGER default 0 NOT NULL,
-				            displayvalue MEDIUMTEXT,
+				            displayvalue MEDIUMTEXT NOT NULL,
 				            absolutevalue DOUBLE default 0 NOT NULL,
 				            unitid INTEGER default 0 NOT NULL,
 					            isabsolute BOOL default 0 NOT NULL,
@@ -60,7 +59,7 @@ drop table if exists tempproductdescriptions;
 CREATE TABLE tempproductdescriptions
 (
 				            productid INTEGER default 0 NOT NULL,
-	    				          description MEDIUMTEXT default '' NOT NULL,
+	    				          description MEDIUMTEXT  NOT NULL,
 					            isdefault BOOL default 0 NOT NULL,
 				            type INTEGER default 0 NOT NULL,
 				            localeid INTEGER default 0 NOT NULL
@@ -78,6 +77,8 @@ CREATE TABLE tempproductimages
 				            status VARCHAR (60) default '' NOT NULL
 ) Engine=MyISAM;
 
+/*
+
 # -----------------------------------------------------------------------
 # productkeywords
 # -----------------------------------------------------------------------
@@ -89,6 +90,9 @@ CREATE TABLE tempproductkeywords
 	    				            keywords MEDIUMTEXT default '' NOT NULL,
 				            localeid INTEGER default 0 NOT NULL
 ) Engine=MyISAM;
+
+*/
+
 
 # -----------------------------------------------------------------------
 # productlocales
@@ -142,6 +146,7 @@ CREATE TABLE tempproductupsell
 				            localeid INTEGER default 0 NOT NULL
 ) Engine=MyISAM;
 
+/*
 # -----------------------------------------------------------------------
 # search_attribute
 # -----------------------------------------------------------------------
@@ -156,6 +161,8 @@ CREATE TABLE tempsearch_attribute
 					            isabsolute BOOL default 0 NOT NULL,
 				            localeid INTEGER default 0 NOT NULL
 ) Engine=MyISAM;
+
+
 
 # -----------------------------------------------------------------------
 # search_attribute_values
@@ -195,6 +202,8 @@ CREATE TABLE tempsearch_attribute_values
 	#			            valueid INTEGER default 0 NOT NULL,
 		#		            value VARCHAR (255) default '' NOT NULL
 #) Engine=MyISAM;
+
+*/
 
 
 # -----------------------------------------------------------------------
@@ -360,6 +369,8 @@ CREATE TABLE tempunitnames
 
 ) Engine=MyISAM;
 
+/*
+
 # -----------------------------------------------------------------------
 # taxonomyhistory
 # -----------------------------------------------------------------------
@@ -371,5 +382,4 @@ CREATE TABLE temptaxonomyhistory
 				            revisiondate TIMESTAMP
 ) Engine=MyISAM;
 
-
-
+*/
